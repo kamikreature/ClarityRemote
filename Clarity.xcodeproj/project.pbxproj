@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		1DB3BE4026B9B98000C77D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE3F26B9B98000C77D8A /* AppDelegate.swift */; };
 		1DB3BE4226B9B98000C77D8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4126B9B98000C77D8A /* SceneDelegate.swift */; };
-		1DB3BE4426B9B98000C77D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4326B9B98000C77D8A /* ViewController.swift */; };
+		1DB3BE4426B9B98000C77D8A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4326B9B98000C77D8A /* HomeViewController.swift */; };
 		1DB3BE4726B9B98000C77D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4526B9B98000C77D8A /* Main.storyboard */; };
 		1DB3BE4A26B9B98000C77D8A /* Clarity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4826B9B98000C77D8A /* Clarity.xcdatamodeld */; };
 		1DB3BE4C26B9B98A00C77D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4B26B9B98A00C77D8A /* Assets.xcassets */; };
 		1DB3BE4F26B9B98A00C77D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BE4D26B9B98A00C77D8A /* LaunchScreen.storyboard */; };
 		1DB3BE5A26B9B98A00C77D8A /* ClarityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE5926B9B98A00C77D8A /* ClarityTests.swift */; };
 		1DB3BE6526B9B98A00C77D8A /* ClarityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE6426B9B98A00C77D8A /* ClarityUITests.swift */; };
+		1DB3BE7926B9C73100C77D8A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE7826B9C73100C77D8A /* LogViewController.swift */; };
+		1DB3BE7E26B9C74900C77D8A /* LogResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE7D26B9C74900C77D8A /* LogResultsViewController.swift */; };
+		1DB3BE8326B9C76100C77D8A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE8226B9C76100C77D8A /* CalendarViewController.swift */; };
+		1DB3BE8826B9C77F00C77D8A /* BreatheInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE8726B9C77F00C77D8A /* BreatheInputViewController.swift */; };
+		1DB3BE8D26B9C79300C77D8A /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE8C26B9C79300C77D8A /* BreatheViewController.swift */; };
+		1DB3BE9726B9C80E00C77D8A /* ClarityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BE9626B9C80E00C77D8A /* ClarityData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		1DB3BE3C26B9B98000C77D8A /* Clarity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB3BE3F26B9B98000C77D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB3BE4126B9B98000C77D8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1DB3BE4326B9B98000C77D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DB3BE4326B9B98000C77D8A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1DB3BE4626B9B98000C77D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DB3BE4926B9B98000C77D8A /* Clarity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clarity.xcdatamodel; sourceTree = "<group>"; };
 		1DB3BE4B26B9B98A00C77D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		1DB3BE6026B9B98A00C77D8A /* ClarityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClarityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB3BE6426B9B98A00C77D8A /* ClarityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityUITests.swift; sourceTree = "<group>"; };
 		1DB3BE6626B9B98A00C77D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB3BE7826B9C73100C77D8A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		1DB3BE7D26B9C74900C77D8A /* LogResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogResultsViewController.swift; sourceTree = "<group>"; };
+		1DB3BE8226B9C76100C77D8A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		1DB3BE8726B9C77F00C77D8A /* BreatheInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheInputViewController.swift; sourceTree = "<group>"; };
+		1DB3BE8C26B9C79300C77D8A /* BreatheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewController.swift; sourceTree = "<group>"; };
+		1DB3BE9626B9C80E00C77D8A /* ClarityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +115,9 @@
 			children = (
 				1DB3BE3F26B9B98000C77D8A /* AppDelegate.swift */,
 				1DB3BE4126B9B98000C77D8A /* SceneDelegate.swift */,
-				1DB3BE4326B9B98000C77D8A /* ViewController.swift */,
-				1DB3BE4526B9B98000C77D8A /* Main.storyboard */,
+				1DB3BE9B26B9C89B00C77D8A /* Models */,
+				1DB3BE9526B9C7F200C77D8A /* Views */,
+				1DB3BE9126B9C7D500C77D8A /* Controllers */,
 				1DB3BE4B26B9B98A00C77D8A /* Assets.xcassets */,
 				1DB3BE4D26B9B98A00C77D8A /* LaunchScreen.storyboard */,
 				1DB3BE5026B9B98A00C77D8A /* Info.plist */,
@@ -129,6 +142,35 @@
 				1DB3BE6626B9B98A00C77D8A /* Info.plist */,
 			);
 			path = ClarityUITests;
+			sourceTree = "<group>";
+		};
+		1DB3BE9126B9C7D500C77D8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3BE4326B9B98000C77D8A /* HomeViewController.swift */,
+				1DB3BE7826B9C73100C77D8A /* LogViewController.swift */,
+				1DB3BE7D26B9C74900C77D8A /* LogResultsViewController.swift */,
+				1DB3BE8226B9C76100C77D8A /* CalendarViewController.swift */,
+				1DB3BE8726B9C77F00C77D8A /* BreatheInputViewController.swift */,
+				1DB3BE8C26B9C79300C77D8A /* BreatheViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1DB3BE9526B9C7F200C77D8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3BE4526B9B98000C77D8A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DB3BE9B26B9C89B00C77D8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3BE9626B9C80E00C77D8A /* ClarityData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB3BE7E26B9C74900C77D8A /* LogResultsViewController.swift in Sources */,
 				1DB3BE4A26B9B98000C77D8A /* Clarity.xcdatamodeld in Sources */,
-				1DB3BE4426B9B98000C77D8A /* ViewController.swift in Sources */,
+				1DB3BE9726B9C80E00C77D8A /* ClarityData.swift in Sources */,
+				1DB3BE8826B9C77F00C77D8A /* BreatheInputViewController.swift in Sources */,
+				1DB3BE7926B9C73100C77D8A /* LogViewController.swift in Sources */,
+				1DB3BE4426B9B98000C77D8A /* HomeViewController.swift in Sources */,
+				1DB3BE8D26B9C79300C77D8A /* BreatheViewController.swift in Sources */,
 				1DB3BE4026B9B98000C77D8A /* AppDelegate.swift in Sources */,
+				1DB3BE8326B9C76100C77D8A /* CalendarViewController.swift in Sources */,
 				1DB3BE4226B9B98000C77D8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
