@@ -14,5 +14,6 @@ struct ClarityData {
     
     func calculateResults() -> Int {
         //
+        return 1
     }
 }

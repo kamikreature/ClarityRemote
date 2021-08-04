@@ -9,6 +9,9 @@ import UIKit
 
 class LogViewController: UIViewController {
 
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var questionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +19,9 @@ class LogViewController: UIViewController {
     }
     
 
+    @IBAction func answerButtons(_ sender: UIButton) {
+        
+    }
     /*
     // MARK: - Navigation
 

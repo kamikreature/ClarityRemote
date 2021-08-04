@@ -9,9 +9,12 @@ import UIKit
 
 class BreatheViewController: UIViewController {
 
+    @IBOutlet weak var timerProgressBar: UIProgressView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

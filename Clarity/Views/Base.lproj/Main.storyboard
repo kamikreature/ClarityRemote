@@ -21,24 +21,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtons:" destination="bcb-tK-y6V" eventType="touchUpInside" id="PtV-hF-UPI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ao-yn-JmU">
                                 <rect key="frame" x="91" y="229" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtons:" destination="bcb-tK-y6V" eventType="touchUpInside" id="Iy2-xB-4RY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4q-uo-jjX">
                                 <rect key="frame" x="91" y="287" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtons:" destination="bcb-tK-y6V" eventType="touchUpInside" id="Ig1-1o-bHM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCH-fy-ftw">
                                 <rect key="frame" x="91" y="346" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtons:" destination="bcb-tK-y6V" eventType="touchUpInside" id="hGh-je-T9I"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJb-qg-PaH">
                                 <rect key="frame" x="91" y="134" width="78" height="21"/>
@@ -68,6 +80,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZdC-zC-JIM"/>
+                    <connections>
+                        <outlet property="progressBar" destination="weL-gn-921" id="aSu-aa-nQ0"/>
+                        <outlet property="questionLabel" destination="pJb-qg-PaH" id="g6D-ll-l7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQS-sc-SF6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,9 +126,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-GF-YZo">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-GF-YZo">
                                 <rect key="frame" x="74" y="243" width="266" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="timerSliderAction:" destination="JZ1-s4-99h" eventType="valueChanged" id="fpc-fp-gEX"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-j3-pTn">
                                 <rect key="frame" x="183" y="369" width="68" height="30"/>
@@ -120,14 +139,26 @@
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="I'm Ready"/>
                                 <connections>
+                                    <action selector="goButton:" destination="JZ1-s4-99h" eventType="touchUpInside" id="yge-yv-3hq"/>
                                     <segue destination="iVU-1P-LBo" kind="show" id="sBC-v8-Co9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3n-1p-dpr">
+                                <rect key="frame" x="186" y="288" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wic-Pm-4ji"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="y8s-G4-g6W"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="W3n-1p-dpr" id="0fq-rP-xSs"/>
+                        <outlet property="timerSlider" destination="uLx-GF-YZo" id="TbI-Ct-dhD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkW-q8-FVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,6 +212,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z4i-J0-x1H"/>
+                    <connections>
+                        <outlet property="timerProgressBar" destination="XvJ-5R-zev" id="94h-j8-QVs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAZ-rX-oWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
