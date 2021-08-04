@@ -5,17 +5,36 @@
 //  Created by Kamalika Kummathi on 8/3/21.
 //
 
+import FSCalendar
 import UIKit
 
-class CalendarViewController: UIViewController {
+
+class CalendarViewController: UIViewController, FSCalendarDelegate {
+    
+    @IBOutlet var calendar: FSCalendar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        calendar.delegate = self
         // Do any additional setup after loading the view.
     }
     
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        print("monke")
+        print(date)
+        
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+
+        if let date = dateFormatterGet.date(from: "2016-02-29 12:24:26") {
+            print(dateFormatterPrint.string(from: date))
+        } else {
+           print("There was an error decoding the string")
+        }
+    }
     /*
     // MARK: - Navigation
 

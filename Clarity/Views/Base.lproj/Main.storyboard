@@ -97,19 +97,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a5P-wW-os7">
-                                <rect key="frame" x="20" y="185" width="344" height="250"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-NQ-CXk" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="103" width="374" height="308"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Sa-Xl-ErL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="769-fd-qVv"/>
+                    <connections>
+                        <outlet property="calendar" destination="cFa-NQ-CXk" id="ckY-Bt-n9v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFw-Fj-t7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="570"/>
+            <point key="canvasLocation" x="260.86956521739131" y="569.86607142857144"/>
         </scene>
         <!--Breathe Input View Controller-->
         <scene sceneID="gU6-Rm-SYT">
@@ -292,7 +296,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
