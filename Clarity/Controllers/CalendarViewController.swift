@@ -29,11 +29,8 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "MMM dd,yyyy"
 
-        if let date = dateFormatterGet.date(from: "2016-02-29 12:24:26") {
-            print(dateFormatterPrint.string(from: date))
-        } else {
-           print("There was an error decoding the string")
-        }
+        print(dateFormatterPrint.string(from: date))
+      
     }
     /*
     // MARK: - Navigation

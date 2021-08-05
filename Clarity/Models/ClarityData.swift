@@ -12,6 +12,8 @@ struct ClarityData {
     var mentalHealthQuizQuestions = [""]
     var mentalHealthQuizAnswers = [""]
     
+    var breathingTimerInput = 1
+    
     func calculateResults() -> Int {
         //
         return 1
