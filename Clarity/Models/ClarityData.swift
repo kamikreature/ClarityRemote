@@ -6,16 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct ClarityData {
-    var mentalHealthQuizQuestions = [""]
-    var mentalHealthQuizAnswers = [""]
-    
     var breathingTimerInput = 1
+    var todayScore = 0
     
-    func calculateResults() -> Int {
-        //
-        return 1
-    }
+    var dateArray: [String] = []
+    var colorArray: [UIColor] = []
+    
+    
+    
 }

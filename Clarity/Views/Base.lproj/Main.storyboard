@@ -27,35 +27,59 @@
                                                 <rect key="frame" x="17" y="17" width="389" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well did you sleep last night?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-Z1-GDW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="21"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-yt-Xa0">
+                                                        <rect key="frame" x="122.14471968715407" y="32" width="168" height="29"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                        <state key="normal" title="Best sleep of my life!">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="nss-4Y-Opq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0K-U1-EaM">
+                                                        <rect key="frame" x="57.638852672820121" y="92" width="322" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                        <state key="normal" title="I was restless and didn’t sleep that well.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addThreePoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="EQQ-sW-I73"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69d-uY-0FO">
+                                                        <rect key="frame" x="95.093872229465433" y="118" width="196.00000000000011" height="30.000000000000057"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                        <state key="normal" title="I couldn’t sleep at all.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addFourPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="Cpb-PI-rtr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02B-ZB-RKN">
+                                                        <rect key="frame" x="105.49804432861629" y="61" width="208" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                                        <state key="normal" title="I got a good night’s sleep.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="gZS-YM-UFx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well did you sleep last night?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-Z1-GDW">
+                                                        <rect key="frame" x="54" y="8" width="278" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
                                                         <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-yt-Xa0">
-                                                        <rect key="frame" x="8" y="29" width="143" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Best sleep of my life!"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0K-U1-EaM">
-                                                        <rect key="frame" x="8" y="90" width="272" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I was restless and didn’t sleep that well."/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69d-uY-0FO">
-                                                        <rect key="frame" x="8" y="118" width="145" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I couldn’t sleep at all."/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02B-ZB-RKN">
-                                                        <rect key="frame" x="8" y="59" width="177" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I got a good night’s sleep."/>
-                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="backgroundColor" name="cream"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-FF-PXJ">
                                                 <rect key="frame" x="17" y="204" width="389" height="168"/>
@@ -64,32 +88,53 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-fm-0XW">
                                                         <rect key="frame" x="8" y="29" width="218" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I loved our conversations today!"/>
+                                                        <state key="normal" title="I loved our conversations today!">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="b87-0y-UwP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-UN-bsU">
                                                         <rect key="frame" x="8" y="90" width="299" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="It was difficult to connect with others today."/>
+                                                        <state key="normal" title="It was difficult to connect with others today.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addThreePoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="eCE-ps-Omr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-vc-9Yj">
                                                         <rect key="frame" x="8" y="118" width="274" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I didn’t want to be around anyone today."/>
+                                                        <state key="normal" title="I didn’t want to be around anyone today.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addFourPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="dez-0e-JG1"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYF-Bq-UjC">
                                                         <rect key="frame" x="8" y="59" width="195" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="We had good conversations."/>
+                                                        <state key="normal" title="We had good conversations.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="0MO-Gs-Ddc"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well were you able to connect with your peers/colleagues today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9x-Bz-3Ol">
                                                         <rect key="frame" x="0.0" y="-7" width="381" height="51"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="backgroundColor" name="cream"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-Ij-wdB">
                                                 <rect key="frame" x="13" y="388" width="389" height="168"/>
@@ -98,34 +143,53 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St5-VA-xJv">
                                                         <rect key="frame" x="8" y="29" width="169" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Yes, I got so much done!"/>
+                                                        <state key="normal" title="Yes, I got so much done!">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="Cnr-pA-lnb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luh-0a-ksF">
                                                         <rect key="frame" x="8" y="90" width="381" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I got distracted very easily and didn’t get much done today."/>
+                                                        <state key="normal" title="I got distracted very easily and didn’t get much done today.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addThreePoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="vPy-ZA-BlA"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viK-zY-FYA">
                                                         <rect key="frame" x="8" y="118" width="310" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I didn’t have any motivation to do work today."/>
+                                                        <state key="normal" title="I didn’t have any motivation to do work today.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addFourPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="zQx-KH-cyE"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0t-Sf-w5M">
                                                         <rect key="frame" x="8" y="59" width="280" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal">
                                                             <string key="title">I got a good amount of work done today.	</string>
+                                                            <color key="titleColor" name="darkBlue"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="Q66-40-cvE"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Were you able to concentrate on your work today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-fB-JAi">
                                                         <rect key="frame" x="0.0" y="-7" width="402" height="51"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="backgroundColor" name="cream"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-ZQ-VUp">
                                                 <rect key="frame" x="13" y="574" width="389" height="127"/>
@@ -134,22 +198,32 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-NH-FBd">
                                                         <rect key="frame" x="8" y="90" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="No"/>
+                                                        <state key="normal" title="No">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="fYy-c9-5Ux"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nes-VY-e3s">
                                                         <rect key="frame" x="8" y="59" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Yes"/>
+                                                        <state key="normal" title="Yes">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="MXt-83-NUz"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you look for things to make yourself feel accomplished today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b06-cp-YLO">
                                                         <rect key="frame" x="0.0" y="-7" width="374" height="51"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="backgroundColor" name="cream"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12H-ys-Fom">
                                                 <rect key="frame" x="8" y="709" width="389" height="168"/>
@@ -159,26 +233,37 @@
                                                         <rect key="frame" x="8" y="90" width="381" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="I’m worried that I may not finish some of my work by the deadline."/>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="4Tb-qa-9uf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-8n-JU8">
                                                         <rect key="frame" x="8" y="118" width="381" height="42"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Deadlines were consuming me today! That’s all I could think about!"/>
+                                                        <connections>
+                                                            <action selector="addThreePoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="kIQ-V5-Ixj"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX3-f3-kK8">
                                                         <rect key="frame" x="8" y="59" width="368" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="I felt in control with my work and upcoming deadlines."/>
+                                                        <state key="normal" title="I felt in control with my work and upcoming deadlines.">
+                                                            <color key="titleColor" name="darkBlue"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="ims-vF-GEq"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often were you worried about upcoming deadlines today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tca-0a-aKc">
                                                         <rect key="frame" x="0.0" y="-7" width="402" height="51"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="darkBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="backgroundColor" name="cream"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-3W-gtN">
                                                 <rect key="frame" x="8" y="897" width="389" height="127"/>
@@ -188,11 +273,17 @@
                                                         <rect key="frame" x="8" y="90" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="No"/>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="ZE9-uo-bGs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-fl-NT5">
                                                         <rect key="frame" x="8" y="59" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Yes"/>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="XX5-48-66V"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you experience a stress-headache today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDT-z6-u2Y">
                                                         <rect key="frame" x="0.0" y="-7" width="374" height="51"/>
@@ -212,11 +303,17 @@
                                                         <rect key="frame" x="8" y="90" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="No"/>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="vy8-N0-N6Q"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-Ie-R53">
                                                         <rect key="frame" x="8" y="59" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Yes"/>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="OSX-VU-RQr"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you experience neck or shoulder pain caused by stress today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqn-TX-Ywt">
                                                         <rect key="frame" x="0.0" y="-7" width="374" height="51"/>
@@ -228,43 +325,25 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e83-Mo-PZU">
-                                                <rect key="frame" x="8" y="1167" width="389" height="127"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-hs-qqd">
-                                                        <rect key="frame" x="8" y="90" width="30" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="No"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POj-Nf-6YQ">
-                                                        <rect key="frame" x="8" y="59" width="30" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Yes"/>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you experience neck or shoulder pain caused by stress today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-VM-3mK">
-                                                        <rect key="frame" x="0.0" y="-7" width="374" height="51"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                            </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEf-Xt-w7X">
-                                                <rect key="frame" x="17" y="1310" width="389" height="127"/>
+                                                <rect key="frame" x="8" y="1173" width="389" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pW-WU-RME">
                                                         <rect key="frame" x="8" y="90" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="No"/>
+                                                        <connections>
+                                                            <action selector="addOnePoint:" destination="YME-1q-vhu" eventType="touchUpInside" id="dgr-Oa-EnX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hox-Ii-9eF">
                                                         <rect key="frame" x="8" y="59" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Yes"/>
+                                                        <connections>
+                                                            <action selector="addTwoPoints:" destination="YME-1q-vhu" eventType="touchUpInside" id="6xA-Qg-tz7"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you felt angry today, did you feel better or more powerful during that period?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3J-sO-2iZ">
                                                         <rect key="frame" x="0.0" y="-7" width="374" height="51"/>
@@ -276,8 +355,19 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0q-O1-CNF">
+                                                <rect key="frame" x="163" y="1376" width="120" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" name="darkBlue"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="cream"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="doneButton:" destination="YME-1q-vhu" eventType="touchUpInside" id="Qho-Ah-Nq9"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="lightGreen"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1500" id="mC9-js-7zr"/>
                                         </constraints>
@@ -292,7 +382,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SMN-XS-kud"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="lightGreen"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fj8-vo-yGJ" secondAttribute="bottom" id="79d-vw-B3n"/>
                             <constraint firstItem="fj8-vo-yGJ" firstAttribute="trailing" secondItem="SMN-XS-kud" secondAttribute="trailing" id="EyG-JT-bLa"/>
@@ -306,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYW-90-X4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-628.98550724637687" y="533.70535714285711"/>
+            <point key="canvasLocation" x="-679.71014492753625" y="409.82142857142856"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="G80-jx-Efi">
@@ -485,6 +575,13 @@
                                     <segue destination="JZ1-s4-99h" kind="show" id="1bP-9B-Rp9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Font Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLt-cR-dCe">
+                                <rect key="frame" x="168" y="163" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -515,8 +612,17 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cream">
+            <color red="1" green="0.96078431372549022" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="darkBlue">
             <color red="0.058823529411764705" green="0.29803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGreen">
+            <color red="0.74117647058823533" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

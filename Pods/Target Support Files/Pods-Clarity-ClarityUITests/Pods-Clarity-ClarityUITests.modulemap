@@ -1,0 +1,6 @@
+framework module Pods_Clarity_ClarityUITests {
+  umbrella header "Pods-Clarity-ClarityUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

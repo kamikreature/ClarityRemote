@@ -9,9 +9,13 @@ import FSCalendar
 import UIKit
 
 
-class CalendarViewController: UIViewController, FSCalendarDelegate {
+class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDelegateAppearance {
     
     @IBOutlet var calendar: FSCalendar!
+    var clarityData = ClarityData()
+    
+    var localDates: DateFormatter
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,17 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
 
         print(dateFormatterPrint.string(from: date))
       
+    }
+    
+    func formatAllDates(<#parameters#>) -> <#return type#> {
+        for all dates in clarityData.dateArray {
+             var dateFormatter1: DateFormatter = {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy/MM/dd"
+                return formatter
+            }()
+        }
+        
     }
     /*
     // MARK: - Navigation
